@@ -42,21 +42,21 @@
 // }
 
 //kadane's algorithm
-// #include<iostream>
-// using namespace std;
-// int main()
-// {
-//     int n=5;
-//     int arr[]={-1,2,3,-4,-5};
-//     int max_sum=INT_MIN;
-//     int curr_sum=0;
-//     for(int i=0; i<n; i++){
-//       curr_sum+=arr[i];
-//       max_sum = max(curr_sum,max_sum);
-//       if(curr_sum<0){
-//          curr_sum=0;
-//          }
-//    }
-//    cout<<"max subarray sum: "<<max_sum<<endl;
-//    return 0;
-// }
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n=5;
+    int arr[]={-1,2,3,-4,-5};
+    int max_sum=INT_MIN;
+    int curr_sum=0;
+    for(int i=0; i<n; i++){
+      curr_sum+=arr[i];
+      max_sum = max(curr_sum,max_sum);
+      if(curr_sum<0){
+         curr_sum=0;
+         }
+   }
+   cout<<"max subarray sum: "<<max_sum<<endl;
+   return 0;
+} 
